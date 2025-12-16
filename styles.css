@@ -1,0 +1,244 @@
+/* =================================================
+   RESET GENERAL
+================================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* =================================================
+   BODY
+================================================= */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f6f8;
+    color: #111;
+    line-height: 1.4;
+}
+
+/* =================================================
+   HEADER / BANNER (INDEX)
+================================================= */
+.banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* TÍTULO */
+.banner h1 {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+
+    font-family: "Sacramento", cursive;
+    font-size: clamp(36px, 6vw, 60px);
+    color: white;
+    text-align: center;
+
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+/* MENSAJE */
+.mensaje-fin {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 90%;
+    max-width: 650px;
+
+    font-size: clamp(16px, 3.5vw, 26px);
+    color: white;
+    text-align: center;
+
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+/* =================================================
+   GRID TRABAJADORES (INDEX)
+================================================= */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 16px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    
+}
+/* =================================================
+   CARD JOB
+================================================= */
+.jobs {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.jobs img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.jobs h3 {
+    font-size: 24px;
+}
+
+.jobs a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 600;
+}
+
+.jobs:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    z-index: 5;
+    cursor: pointer;
+}
+
+/* =================================================
+   FOOTER (INDEX)
+================================================= */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* =================================================
+   HEADER OPCIONES
+================================================= */
+.opciones-header {
+    text-align: center;
+    padding: 40px 20px 30px;
+}
+
+.opciones-header .icono {
+    width: 120px;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.opciones-header h1 {
+    font-size: clamp(28px, 4vw, 38px);
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.opciones-header p {
+    font-size: clamp(16px, 3vw, 18px);
+    color: #666;
+}
+
+/* =================================================
+   GRID OPCIONES
+================================================= */
+.opciones-grid {
+    max-width: 1000px;
+    margin: 0 auto 60px;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+/* =================================================
+   CARD OPCIÓN
+================================================= */
+.card-opcion {
+    background: white;
+    border-radius: 18px;
+    padding: 18px;
+
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-opcion:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* IMAGEN REGALO */
+.card-opcion img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 15px;
+}
+
+/* TEXTO */
+.card-opcion h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* BOTÓN */
+.card-opcion a {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+
+    text-decoration: none;
+    color: #111;
+    font-weight: 600;
+
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.card-opcion a:hover {
+    background: #111;
+    color: white;
+}
+
+/* =================================================
+   MEDIA QUERIES
+================================================= */
+@media (max-width: 768px) {
+    .banner h1 {
+        top: 15%;
+    }
+
+    .mensaje-fin {
+        top: 30%;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
