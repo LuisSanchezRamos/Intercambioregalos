@@ -10,9 +10,9 @@ const persona = params.get("persona");
 const regalos = {
   paola: [
     {
-      nombre: "Perfume",
+      nombre: "Cartera",
       link: "https://yape.pe",
-      img: "img/perfume.jpg"
+      img: "paola2.jpeg"
     },
     {
       nombre: "Bolso",
