@@ -40,7 +40,14 @@ const regalos = {
       link: "https://yape.pe",
       img: "img/libro.jpg"
     }
-  ]
+  ],
+  cesarm: [
+    {
+      nombre: "Carro Hotweels",
+      link: "https://yape.pe",
+      img: "cesar mant 1.jpeg"
+    }
+  ],
 };
 
 // ======================================
